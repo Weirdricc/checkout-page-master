@@ -21,91 +21,161 @@
       rel="stylesheet"
     />
 
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
+    <link rel="stylesheet" type="text/css" href="./style.css" />
     <title>Devchallenges</title>
   </head>
   <body>
     <div class="container">
-      <div class="form-wrap">
-        <h1>Checkout</h1>
-        <form action="">
-          <fieldset>
-            <legend>Contact information</legend>
-            <div class="input-wrap">
-              <label for="email">E-mail</label><br />
-              <i class="fa fa-envelope"></i>
-              <input
-                type="email"
-                id="email"
-                placeholder="Enter your e-mail..."
-              /><br />
+      <h1 class="big-text">Checkout</h1>
+      <div class="checkout-wrap">
+        <div class="form-wrap">
+          <form class="checkout-form" action="">
+            <fieldset class="borderless">
+              <legend class="form-legend">Contact information</legend>
+              <label class="form-label" for="email">E-mail</label><br />
+              <div class="input-wrap">
+                <i class="form-fa fa fa-envelope"></i>
+                <input
+                  class="borderless"
+                  type="email"
+                  id="email"
+                  placeholder="Enter your e-mail..."
+                /><br />
+              </div>
+              <label class="form-label" for="tel">Phone</label><br />
+              <div class="input-wrap">
+                <i class="form-fa fa fa-phone"></i>
+                <input
+                  class="borderless"
+                  type="tel"
+                  id="tel"
+                  placeholder="Enter your phone..."
+                />
+              </div>
+            </fieldset>
+            <fieldset class="mart48 borderless">
+              <legend class="form-legend">Shipping address</legend>
+              <label class="form-label" for="fname">Full name</label><br />
+              <div class="input-wrap">
+                <i class="form-fa fa fa-user-circle"></i>
+                <input
+                  class="borderless"
+                  type="text"
+                  id="fname"
+                  placeholder="Your name..."
+                /><br />
+              </div>
+              <label class="form-label" for="address">Address</label><br />
+              <div class="input-wrap">
+                <i class="form-fa fa fa-home"></i>
+                <input
+                  class="borderless"
+                  type="text"
+                  id="address"
+                  placeholder="Your address..."
+                />
+              </div>
+              <label class="form-label" for="city">City</label><br />
+              <div class="input-wrap">
+                <i class="form-fa fa fa-building"></i>
+                <input
+                  class="borderless"
+                  type="text"
+                  id="city"
+                  placeholder="Your city..."
+                />
+              </div>
+              <div id="country-postal-wrap" class="horizontal-layout">
+                <div class="halfw">
+                  <label class="form-label" for="country">Country</label><br />
+                  <div class="input-wrap">
+                    <i class="form-fa fa fa-globe"></i>
+                    <input
+                      class="borderless"
+                      type="text"
+                      id="country"
+                      placeholder="Your country..."
+                    />
+                  </div>
+                </div>
+                <div id="postal-code-wrap" class="halfw">
+                  <label class="form-label" for="postal">Postal code</label
+                  ><br />
+                  <div class="input-wrap">
+                    <i class="form-fa fa fa-truck"></i>
+                    <input
+                      class="borderless"
+                      type="text"
+                      id="postal"
+                      placeholder="Your postal code..."
+                    />
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <div id="save-wrap" class="horizontal-layout">
+              <input type="checkbox" id="checkbox" />
+              <label id="save-label" for="checkbox"
+                >Save this information for next time</label
+              >
             </div>
-            <div class="input-wrap">
-              <label for="tel">Phone</label><br />
-              <i class="fa fa-phone"></i>
-              <input type="tel" id="tel" placeholder="Enter your phone..." />
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend>Shipping address</legend>
-            <div class="input-wrap">
-              <label for="fname">Full name</label><br />
-              <i class="fa fa-user-circle"></i>
-              <input type="text" id="fname" placeholder="Rodney Cotton" /><br />
-            </div>
-            <div class="input-wrap">
-              <label for="address">Address</label><br />
-              <i class="fa fa-home"></i>
-              <input type="text" id="address" placeholder="Your address" />
-            </div>
-            <div class="input-wrap">
-              <label for="city">City</label><br />
-              <i class="fa fa-building"></i>
-              <input type="text" id="city" placeholder="Your city" />
-            </div>
-            <div class="input-wrap">
-              <label for="country">Country</label><br />
-              <i class="fa fa-globe"></i>
-              <input type="text" id="country" placeholder="Your country" />
-            </div>
-            <div class="input-wrap">
-              <label for="postal">Postal code</label><br />
-              <i class="fa fa-truck"></i>
-              <input type="text" id="postal" placeholder="Your postal code" />
-            </div>
-          </fieldset>
-          <input type="checkbox" id="checkbox" />
-          <label for="checkbox">Save this information for next time</label
-          ><br />
-          <input type="submit" name="" id="" />
-        </form>
-      </div>
-      <div class="ckeckout-window">
-        <div class="item-count">
-          <img src="photo1.png" alt="" />
-          <div class="item-details">
-            <span>$54.99</span>
-            <span><del>$94.99</del></span>
-            <div class="count-wrap">
-              <i class="fa fa-minus-square-o"></i>
-              <span>1</span>
-              <i class="fa fa-plus-square-o"></i>
-            </div>
-          </div>
+            <input
+              id="continue-button"
+              class="button flex-col-right"
+              type="submit"
+              value="Continue"
+            />
+          </form>
         </div>
-        <div class="item-count">
-          <img src="photo2.png" alt="" />
-          <div class="item-details">
-            <span>$74.99</span>
-            <span><del>$124.99</del></span>
-            <div class="count-wrap">
-              <i class="fa fa-minus-square-o"></i>
-              <span>2</span>
-              <i class="fa fa-plus-square-o"></i>
+        <div class="checkout-window">
+          <div class="checkout-window-wrap">
+            <div class="item-count">
+              <img src="photo1.png" alt="" />
+              <div class="item-details">
+                <span class="item-title">Vintage Backbag</span>
+                <br />
+                <span class="item-price-new">$54.99</span>
+                <span class="item-price-old"><del>$94.99</del></span>
+                <div class="count-wrap">
+                  <i class="fa fa-minus-square-o"></i>
+                  <span class="count">1</span>
+                  <i class="fa fa-plus-square-o"></i>
+                </div>
+              </div>
+            </div>
+            <div class="item-count">
+              <img src="photo2.png" alt="" />
+              <div class="item-details">
+                <span class="item-title">Levi Shoes</span>
+                <br />
+                <span class="item-price-new">$74.99</span>
+                <span class="item-price-old"><del>$124.99</del></span>
+                <div class="count-wrap">
+                  <i class="fa fa-minus-square-o"></i>
+                  <span class="count">2</span>
+                  <i class="fa fa-plus-square-o"></i>
+                </div>
+              </div>
+            </div>
+            <hr class="mar80" />
+            <div class="pad8 horizontal-layout">
+              <span class="shipping">Shipping</span
+              ><span class="money">$19</span>
+            </div>
+            <hr />
+            <div class="pad8 horizontal-layout">
+              <span class="total">Total</span><span class="money">$148.98</span>
             </div>
           </div>
         </div>
