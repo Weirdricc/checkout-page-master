@@ -18,6 +18,7 @@ fieldset {
 }
 
 .button {
+  width: 120px;
   background-color: #f2994a;
   border-radius: 8px;
   color: white;
@@ -49,6 +50,15 @@ fieldset {
 
 .form-wrap {
   margin: 48px;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-col-right {
+  align-self: flex-end;
 }
 
 .checkout-window {
@@ -85,6 +95,10 @@ fieldset {
 
 #postal-code-wrap {
   margin-left: 24px;
+}
+
+#continue-button {
+  margin-top: 12px;
 }
 
 @media (max-width: 768px) {

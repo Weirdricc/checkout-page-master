@@ -40,7 +40,7 @@
       <h1 class="big-text">Checkout</h1>
       <div class="checkout-wrap">
         <div class="form-wrap">
-          <form action="">
+          <form class="checkout-form" action="">
             <fieldset class="borderless">
               <legend class="form-legend">Contact information</legend>
               <label class="form-label" for="email">E-mail</label><br />
@@ -130,7 +130,12 @@
                 >Save this information for next time</label
               >
             </div>
-            <input class="button" type="submit" value="Continue" />
+            <input
+              id="continue-button"
+              class="button flex-col-right"
+              type="submit"
+              value="Continue"
+            />
           </form>
         </div>
         <div class="checkout-window">
