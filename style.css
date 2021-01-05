@@ -36,6 +36,7 @@ fieldset {
   border: 1px solid #828282;
   padding: 8px;
   border-radius: 8px;
+  margin-top: 4px;
 }
 
 .form-legend {
@@ -43,8 +44,10 @@ fieldset {
 }
 
 .form-label {
+  display: inline-block;
   font-size: 12px;
   color: #4f4f4f;
+  margin-top: 12px;
 }
 
 @media (max-width: 768px) {
