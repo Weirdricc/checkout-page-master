@@ -1,0 +1,10 @@
+.checkout-wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .checkout-wrap {
+    flex-direction: column-reverse;
+  }
+}
