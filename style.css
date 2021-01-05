@@ -17,6 +17,11 @@ fieldset {
   color: #4e5150;
 }
 
+.horizontal-layout {
+  display: flex;
+  flex-direction: row;
+}
+
 .form-fa {
   margin-right: 8px;
   color: #828282;
@@ -30,6 +35,14 @@ fieldset {
 .checkout-wrap {
   display: flex;
   flex-direction: row;
+}
+
+.form-wrap {
+  margin: 48px;
+}
+
+.checkout-window {
+  margin: 48px;
 }
 
 .input-wrap {
@@ -48,6 +61,10 @@ fieldset {
   font-size: 12px;
   color: #4f4f4f;
   margin-top: 12px;
+}
+
+#postal-code-wrap {
+  margin-left: 24px;
 }
 
 @media (max-width: 768px) {
