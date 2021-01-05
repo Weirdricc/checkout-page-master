@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+.borderless {
+  border: none;
+}
+
+.big-text {
+  font-size: 36px;
+  color: #4e5150;
+}
+
 .container {
   font-family: Montserrat, sans-serif;
   font-weight: 600;
@@ -14,13 +23,10 @@
   flex-direction: row;
 }
 
-.borderless {
-  border: none;
-}
-
-.big-text {
-  font-size: 36px;
-  color: #4e5150;
+.input-wrap {
+  border: 1px solid #828282;
+  padding: 8px;
+  border-radius: 8px;
 }
 
 .form-legend {
