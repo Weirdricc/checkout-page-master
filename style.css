@@ -21,8 +21,9 @@ fieldset {
   background-color: #f2994a;
   border-radius: 8px;
   color: white;
-  padding: 8px;
+  padding: 8px 32px;
   border: none;
+  font-size: 14px;
 }
 
 .horizontal-layout {
