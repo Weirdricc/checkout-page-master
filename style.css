@@ -1,20 +1,27 @@
+/* ! go to line 76 */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-hr {
-  border: 1px solid #bdbdbd;
-  border: 5px solid magenta;
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
 }
 
-h1 {
-  margin-top: 24px;
+hr {
+  border: 1px solid #bdbdbd;
+  margin: 10px 0;
 }
 
 .container {
-  border: 10px solid yellow;
+  /* border: 10px solid yellow; */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 100px;
 }
 
 .big-text {
@@ -22,134 +29,152 @@ h1 {
   color: #4e5150;
 }
 
-.form-wrap {
-  width: 40%;
-  margin-right: 48px;
-  border: 10px solid blue;
-}
-
-checkout-window {
-  border: 10px solid purple;
-}
-
 .checkout-wrap {
+  /* border: 10px solid red; */
+
   margin-top: 24px;
-  display: flex;
-  flex-direction: row;
-  border: 10px solid red;
-}
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* flex-direction: row; */
+  /* justify-content: center; */
 
-.borderless {
-  /* border: none; */
+  display: grid;
+  /* gap: 10px; */
+  /* grid-template-columns: 1fr 2fr; */
+  grid-template-columns: auto auto;
 }
-
-/* input[type='text'], */
-input {
-  background-color: pink;
-  /* width: 100%; */
-  flex-grow: 1;
+.form-wrap {
+  padding-right: 100px;
+}
+fieldset {
+  border: none;
+}
+#email-wrap,
+#phone-wrap,
+#name-wrap,
+#address-wrap,
+#city-wrap,
+#country-postal-wrap {
+  margin-top: 12px;
+}
+fieldset label {
+  font-size: 12px;
+  color: #4f4f4f;
 }
 .input-wrap {
   display: flex;
+  align-items: center;
+  border: 1px solid #828282;
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 5px;
+  /* max-width: 300px; */
+  /* max-width: 465px; */
 }
+.input-wrap input {
+  display: none;
+  /* you were trying to figure out why the input tags are so stubborn */
+
+  background-color: pink;
+  /* flex-grow: 1; */
+  border: none;
+  /* font-size: 16px; */
+}
+input:focus {
+  outline: none;
+}
+.fa {
+  color: #828282;
+}
+fieldset .fa {
+  margin-right: 12px;
+}
+
 #country-postal-wrap {
-  border: 10px solid cyan;
+  /* display: grid;
+  gap: 30px;
+  grid-template-columns: auto auto; */
+  /* border: 10px solid cyan; */
   display: flex;
+  /* justify-content: space-between; */
+  /* flex-wrap: wrap; */
   /* width: 100%; */
   /* flex-direction: row; */
 }
-
-.button {
-  width: 120px;
+#country-wrap,
+#postal-wrap {
+  flex-grow: 1;
+  /* border: 10px solid magenta; */
+}
+.spacer {
+  /* display: none; */
+  width: 30px;
+}
+#save-wrap {
+  margin: 20px 0;
+  font-size: 12px;
+}
+#save-wrap input {
+  margin-right: 5px;
+}
+.submit-btn {
+  /* border: 10px solid red; */
+  text-align: right;
+}
+#continue-button {
+  /* width: 120px; */
   background-color: #f2994a;
-  border-radius: 8px;
+  border-radius: 12px;
   color: white;
-  padding: 8px 32px;
+  padding: 8px 24px;
   border: none;
   font-size: 14px;
 }
 
-.mart48 {
-  margin-top: 48px;
-}
-
-.horizontal-layout {
-  /* display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap; */
-}
-
-.form-fa {
-  margin-right: 8px;
-  color: #828282;
-}
-
-.container {
-  font-family: Montserrat, sans-serif;
-  font-weight: 600;
-  width: 70vw;
-  margin: 0 auto;
-}
-
-.halfw {
-  /* width: 47.5%; */
-}
-
-.checkout-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.flex-col-right {
-  /* border: 10px solid hotpink; */
-  align-self: flex-end;
-}
-
-.input-wrap {
-  border: 1px solid #828282;
-  padding: 8px;
-  border-radius: 8px;
-  margin-top: 4px;
-}
-
-.form-legend {
-  font-size: 18px;
-}
-
-.form-label {
-  display: inline-block;
-  font-size: 12px;
-  color: #4f4f4f;
-  color: gold;
-  margin-top: 12px;
-}
-
-.checkout-window-wrap {
+.total-wrap {
+  /* border: 10px solid black; */
   background-color: #f2f2f2;
   border-radius: 12px;
-  padding: 24px;
+  /* max-width: 1000px; */
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  /* justify-content: space-between; */
 }
 
 .item-count {
+  /* border: 10px solid green; */
+
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   margin-bottom: 24px;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .item-count img {
+  /* border: 10px solid blue; */
+
   border-radius: 12px;
-  width: 100px;
+  max-width: 135px;
+  width: 100%;
   height: auto;
 }
 
 .item-details {
+  /* border: 10px solid blue; */
+
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   margin-left: 12px;
 }
 
 .item-title {
-  color: #4e5150;
+  /* border: 10px solid black; */
+
+  /* color: #4e5150; */
   font-size: 16px;
 }
 
@@ -164,62 +189,76 @@ input {
 }
 
 .count-wrap {
-  margin-top: 24px;
+  /* border: 5px solid red; */
+  margin-top: auto;
+
   border: 1px solid #828282;
   padding: 8px;
   border-radius: 8px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  /* flex-direction: row; */
+  justify-content: space-between;
   align-items: center;
-  width: 120px;
+  /* width: 120px; */
+  /* min-width: 100px; */
+  /* width: 100%; */
+  max-width: 135px;
 }
+.shiping-total-wrap {
+  /* border: 10px solid green; */
+  /* padding: 15px 0; */
 
-.count-wrap .count {
-  flex-grow: 1;
-  text-align: center;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* height: 100px; */
+  /* justify-self: flex-end; */
+  /* align-self: baseline; */
+  margin-top: auto;
 }
-
 .shipping,
 .total {
+  /* border: 10px solid pink; */
+
   font-size: 16px;
   color: #333333;
+  display: flex;
+  justify-content: space-between;
 }
 
 .money {
   font-size: 14px;
   color: #333333;
-  flex-grow: 1;
-  text-align: right;
+  /* flex-grow: 1; */
+  /* text-align: right; */
 }
 
-.pad8 {
+/* .pad8 {
   padding: 8px 0;
-}
+} */
 
-.mar80 {
+/* .mar80 {
   margin-top: 80px;
-}
+} */
 
-#save-wrap {
+/* #save-wrap {
   margin-top: 16px;
-}
+} */
 
-#save-label {
+/* #save-label {
   font-size: 12px;
   color: #4f4f4f;
   margin-left: 8px;
-}
+} */
 
-#continue-button {
+/* #continue-button {
   margin-top: 12px;
-}
+} */
 
 /* #postal-code-wrap {
   margin-left: 5%;
 } */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .container {
     width: 80vw;
   }
@@ -247,4 +286,4 @@ input {
   fieldset {
     margin-top: 48px;
   }
-}
+} */
