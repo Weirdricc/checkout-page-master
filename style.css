@@ -4,123 +4,149 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+}
+
 hr {
   border: 1px solid #bdbdbd;
+  margin: 10px 0;
 }
 
-h1 {
-  margin-top: 24px;
-}
-
-.borderless {
-  border: none;
+.container {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
 }
 
 .big-text {
   font-size: 36px;
   color: #4e5150;
+  margin-bottom: 24px;
 }
 
-.button {
-  width: 120px;
-  background-color: #f2994a;
+.checkout-wrap {
+  display: flex;
+}
+
+.form-wrap {
+  padding-right: 70px;
+}
+
+fieldset {
+  border: none;
+}
+
+#email-wrap,
+#phone-wrap,
+#name-wrap,
+#address-wrap,
+#city-wrap,
+#country-postal-wrap {
+  margin-top: 12px;
+}
+
+fieldset label {
+  font-size: 12px;
+  color: #4f4f4f;
+}
+
+.input-wrap {
+  display: flex;
+  border: 1px solid #828282;
+  padding: 12px;
   border-radius: 8px;
+  margin-top: 5px;
+}
+
+.input-wrap input {
+  border: none;
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+}
+
+.fa {
+  color: #828282;
+}
+
+fieldset .fa {
+  margin-right: 12px;
+}
+
+#country-postal-wrap {
+  display: flex;
+}
+
+#country-wrap,
+#postal-wrap {
+  flex: 1;
+}
+
+#country-wrap input,
+#postal-wrap input {
+  display: flex;
+}
+
+.spacer {
+  width: 30px;
+}
+
+#save-wrap {
+  margin: 20px 0;
+  font-size: 12px;
+}
+
+#save-wrap input {
+  margin-right: 5px;
+}
+
+.submit-btn {
+  text-align: right;
+}
+
+#continue-button {
+  background-color: #f2994a;
+  border-radius: 12px;
   color: white;
-  padding: 8px 32px;
+  padding: 15px 30px;
   border: none;
   font-size: 14px;
 }
 
-.mart48 {
-  margin-top: 48px;
-}
-
-.horizontal-layout {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.form-fa {
-  margin-right: 8px;
-  color: #828282;
-}
-
-.container {
-  font-family: Montserrat, sans-serif;
-  font-weight: 600;
-  width: 70vw;
-  margin: 0 auto;
-}
-
-.checkout-wrap {
-  margin-top: 24px;
-  display: flex;
-  flex-direction: row;
-}
-
-.form-wrap {
-  width: 40%;
-  margin-right: 48px;
-}
-
-.halfw {
-  width: 47.5%;
-}
-
-.checkout-form {
+.total-wrap {
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
 }
 
-.flex-col-right {
-  align-self: flex-end;
-}
-
-.checkout-window-wrap {
-  background-color: #f2f2f2;
-  border-radius: 12px;
-  padding: 24px;
-}
-
-.input-wrap {
-  border: 1px solid #828282;
-  padding: 8px;
-  border-radius: 8px;
-  margin-top: 4px;
-}
-
-.form-legend {
-  font-size: 18px;
-}
-
-.form-label {
-  display: inline-block;
-  font-size: 12px;
-  color: #4f4f4f;
-  margin-top: 12px;
-}
-
 .item-count {
   display: flex;
-  flex-direction: row;
   margin-bottom: 24px;
-  align-items: center;
 }
 
 .item-count img {
   border-radius: 12px;
-  width: 100px;
+  max-width: 135px;
+  width: 100%;
   height: auto;
 }
 
 .item-details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   margin-left: 12px;
 }
 
 .item-title {
-  color: #4e5150;
   font-size: 16px;
 }
 
@@ -135,87 +161,46 @@ h1 {
 }
 
 .count-wrap {
-  margin-top: 24px;
+  margin-top: auto;
   border: 1px solid #828282;
   padding: 8px;
   border-radius: 8px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 120px;
+  max-width: 135px;
 }
-
-.count-wrap .count {
-  flex-grow: 1;
-  text-align: center;
+.shiping-total-wrap {
+  margin-top: auto;
 }
 
 .shipping,
 .total {
   font-size: 16px;
   color: #333333;
+  display: flex;
+  justify-content: space-between;
 }
 
 .money {
   font-size: 14px;
   color: #333333;
-  flex-grow: 1;
-  text-align: right;
-}
-
-.pad8 {
-  padding: 8px 0;
-}
-
-.mar80 {
-  margin-top: 80px;
-}
-
-#save-wrap {
-  margin-top: 16px;
-}
-
-#save-label {
-  font-size: 12px;
-  color: #4f4f4f;
-  margin-left: 8px;
-}
-
-#continue-button {
-  margin-top: 12px;
-}
-
-#postal-code-wrap {
-  margin-left: 5%;
 }
 
 @media (max-width: 768px) {
   .container {
-    width: 80vw;
+    margin: 5% auto;
   }
 
   .checkout-wrap {
     flex-direction: column-reverse;
   }
 
-  .big-text {
-    font-size: 24px;
-  }
-
-  .form-legend {
-    font-size: 14px;
-  }
-
-  .form-label {
-    font-size: 10px;
-  }
-
   .form-wrap {
-    width: 100%;
+    padding-right: 0;
   }
 
-  fieldset {
-    margin-top: 48px;
+  .total-wrap {
+    margin-bottom: 40px;
   }
 }
