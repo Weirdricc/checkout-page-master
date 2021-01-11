@@ -88,11 +88,6 @@ fieldset .fa {
   flex: 1;
 }
 
-#country-wrap input,
-#postal-wrap input {
-  display: flex;
-}
-
 .spacer {
   width: 30px;
 }
