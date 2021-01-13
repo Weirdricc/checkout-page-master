@@ -41,26 +41,24 @@
       <div class="checkout-wrap">
         <div class="form-wrap">
           <form action="">
-            <fieldset class="borderless">
-              <legend class="form-legend">Contact information</legend>
-              <div id="email-wrap" class="wrap-box">
-                <label class="form-label" for="email">E-mail</label><br />
+            <fieldset>
+              <legend>Contact information</legend>
+              <div id="email-wrap">
+                <label for="email">E-mail</label><br />
                 <div class="input-wrap">
                   <i class="form-fa fa fa-envelope"></i>
                   <input
-                    class="borderless"
                     type="email"
                     id="email"
                     placeholder="Enter your e-mail..."
                   />
                 </div>
               </div>
-              <div id="phone-wrap" class="wrap-box">
-                <label class="form-label" for="tel">Phone</label><br />
+              <div id="phone-wrap">
+                <label for="tel">Phone</label><br />
                 <div class="input-wrap">
                   <i class="form-fa fa fa-phone"></i>
                   <input
-                    class="borderless"
                     type="tel"
                     id="tel"
                     placeholder="Enter your phone..."
@@ -68,69 +66,57 @@
                 </div>
               </div>
             </fieldset>
-
-            <!-- br for spacing -->
             <br /><br />
-
-            <fieldset class="mart48 borderless">
-              <legend class="form-legend">Shipping address</legend>
-              <div id="name-wrap" class="wrap-box">
-                <label class="form-label" for="fname">Full name</label><br />
+            <fieldset>
+              <legend>Shipping address</legend>
+              <div id="name-wrap">
+                <label for="fname">Full name</label><br />
                 <div class="input-wrap">
                   <i class="form-fa fa fa-user-circle"></i>
                   <input
-                    class="borderless"
                     type="text"
                     id="fname"
                     placeholder="Your name..."
                   /><br />
                 </div>
               </div>
-              <div id="address-wrap" class="wrap-box">
-                <label class="form-label" for="address">Address</label><br />
+              <div id="address-wrap">
+                <label for="address">Address</label><br />
                 <div class="input-wrap">
                   <i class="form-fa fa fa-home"></i>
                   <input
-                    class="borderless"
                     type="text"
                     id="address"
                     placeholder="Your address..."
                   />
                 </div>
               </div>
-              <div id="city-wrap" class="wrap-box">
-                <label class="form-label" for="city">City</label><br />
+              <div id="city-wrap">
+                <label for="city">City</label><br />
                 <div class="input-wrap">
                   <i class="form-fa fa fa-building"></i>
-                  <input
-                    class="borderless"
-                    type="text"
-                    id="city"
-                    placeholder="Your city..."
-                  />
+                  <input type="text" id="city" placeholder="Your city..." />
                 </div>
               </div>
-              <div id="country-postal-wrap" class="horizontal-layout">
-                <div id="country-wrap" class="halfw wrap-box">
-                  <label class="form-label" for="country">Country</label><br />
+              <div id="country-postal-wrap">
+                <div id="country-wrap">
+                  <label for="country">Country</label><br />
                   <div class="input-wrap">
                     <i class="form-fa fa fa-globe"></i>
-                    <input
-                      class="borderless"
-                      type="text"
-                      id="country"
-                      placeholder="Your country..."
-                    />
+                    <select id="countries-list">
+                      <option disabled selected hidden>Your Country...</option>
+                      <option>Country01</option>
+                      <option>Country02</option>
+                      <option>Country03</option>
+                    </select>
                   </div>
                 </div>
                 <div class="spacer"></div>
-                <div id="postal-wrap" class="halfw wrap-box">
-                  <label class="form-label" for="postal">Postal code</label
-                  ><br />
+                <div id="postal-wrap">
+                  <label for="postal">Postal code</label><br />
                   <div class="input-wrap">
                     <i class="form-fa fa fa-truck"></i>
                     <input
-                      class="borderless"
                       type="text"
                       id="postal"
                       placeholder="Your postal code..."
@@ -139,23 +125,16 @@
                 </div>
               </div>
             </fieldset>
-            <div id="save-wrap" class="horizontal-layout">
+            <div id="save-wrap">
               <input type="checkbox" id="checkbox" />
               <label for="checkbox">Save this information for next time</label>
             </div>
-            <!-- <input
-                id="continue-button"
-                class="button flex-col-right"
-                type="submit"
-                value="Continue"
-              /> -->
             <div class="submit-btn">
               <input id="continue-button" type="submit" value="Continue" />
             </div>
           </form>
         </div>
         <div class="total-wrap">
-          <!-- <div class="checkout-window-wrap"> -->
           <div class="item-count">
             <img src="photo1.png" alt="product" />
             <div class="item-details">
@@ -196,7 +175,6 @@
               <span class="money">$148.98</span>
             </div>
           </div>
-          <!-- </div> -->
         </div>
       </div>
     </div>

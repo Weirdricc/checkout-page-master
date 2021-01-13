@@ -62,12 +62,14 @@ fieldset label {
   margin-top: 5px;
 }
 
-.input-wrap input {
+.input-wrap input,
+#countries-list {
   border: none;
   width: 100%;
 }
 
-input:focus {
+input:focus,
+#countries-list:focus {
   outline: none;
 }
 
